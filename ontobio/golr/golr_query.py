@@ -1426,8 +1426,6 @@ class GolrAssociationQuery(GolrAbstractQuery):
             return None
 
         lf = M.label_field(fname)
-
-        gq = GolrAssociationQuery() ## TODO - make this a class method
         id = d[fname]
         id = self.make_canonical_identifier(id)
         #if id.startswith('MGI:MGI:'):
